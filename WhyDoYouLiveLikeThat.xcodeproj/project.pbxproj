@@ -11,6 +11,11 @@
 		5C8016142BC788DE00BEEEB4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8016132BC788DE00BEEEB4 /* ContentView.swift */; };
 		5C8016162BC788DF00BEEEB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C8016152BC788DF00BEEEB4 /* Assets.xcassets */; };
 		5C8016192BC788DF00BEEEB4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C8016182BC788DF00BEEEB4 /* Preview Assets.xcassets */; };
+		5C8016202BC7A08A00BEEEB4 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C80161F2BC7A08A00BEEEB4 /* TabBar.swift */; };
+		5C8016222BC7A18900BEEEB4 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8016212BC7A18900BEEEB4 /* SplashView.swift */; };
+		5C9BED1E2BC7A2EF00861FA2 /* Color+hexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9BED1D2BC7A2EF00861FA2 /* Color+hexColor.swift */; };
+		5C9BED202BC7A3A200861FA2 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9BED1F2BC7A3A200861FA2 /* CalendarView.swift */; };
+		5C9BED232BC7A3B900861FA2 /* MypageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9BED222BC7A3B900861FA2 /* MypageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		5C8016132BC788DE00BEEEB4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5C8016152BC788DF00BEEEB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C8016182BC788DF00BEEEB4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5C80161F2BC7A08A00BEEEB4 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		5C8016212BC7A18900BEEEB4 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		5C9BED1D2BC7A2EF00861FA2 /* Color+hexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+hexColor.swift"; sourceTree = "<group>"; };
+		5C9BED1F2BC7A3A200861FA2 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		5C9BED222BC7A3B900861FA2 /* MypageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +61,12 @@
 		5C8016102BC788DE00BEEEB4 /* WhyDoYouLiveLikeThat */ = {
 			isa = PBXGroup;
 			children = (
+				5C9BED212BC7A3AA00861FA2 /* View */,
+				5C9BED1C2BC7A2DA00861FA2 /* Utills */,
 				5C8016112BC788DE00BEEEB4 /* WhyDoYouLiveLikeThatApp.swift */,
-				5C8016132BC788DE00BEEEB4 /* ContentView.swift */,
 				5C8016152BC788DF00BEEEB4 /* Assets.xcassets */,
 				5C8016172BC788DF00BEEEB4 /* Preview Content */,
+				5C8016212BC7A18900BEEEB4 /* SplashView.swift */,
 			);
 			path = WhyDoYouLiveLikeThat;
 			sourceTree = "<group>";
@@ -65,6 +77,25 @@
 				5C8016182BC788DF00BEEEB4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5C9BED1C2BC7A2DA00861FA2 /* Utills */ = {
+			isa = PBXGroup;
+			children = (
+				5C80161F2BC7A08A00BEEEB4 /* TabBar.swift */,
+				5C9BED1D2BC7A2EF00861FA2 /* Color+hexColor.swift */,
+			);
+			path = Utills;
+			sourceTree = "<group>";
+		};
+		5C9BED212BC7A3AA00861FA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5C9BED1F2BC7A3A200861FA2 /* CalendarView.swift */,
+				5C8016132BC788DE00BEEEB4 /* ContentView.swift */,
+				5C9BED222BC7A3B900861FA2 /* MypageView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +168,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C8016202BC7A08A00BEEEB4 /* TabBar.swift in Sources */,
+				5C8016222BC7A18900BEEEB4 /* SplashView.swift in Sources */,
+				5C9BED232BC7A3B900861FA2 /* MypageView.swift in Sources */,
+				5C9BED202BC7A3A200861FA2 /* CalendarView.swift in Sources */,
 				5C8016142BC788DE00BEEEB4 /* ContentView.swift in Sources */,
+				5C9BED1E2BC7A2EF00861FA2 /* Color+hexColor.swift in Sources */,
 				5C8016122BC788DE00BEEEB4 /* WhyDoYouLiveLikeThatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
