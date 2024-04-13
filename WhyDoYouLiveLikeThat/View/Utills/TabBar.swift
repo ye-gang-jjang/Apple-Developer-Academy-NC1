@@ -21,35 +21,37 @@ struct TabBar: View {
                 selected = .a
             } label: {
                 VStack(alignment: .center) {
-                    Image(systemName: "calendar.circle")
+                    Image(systemName: "square")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 30)
+                        .frame(width: 40)
+                        .bold()
                 }
             }
             .foregroundStyle(selected == .a ? Color.accentColor : Color.primary)
             
             Spacer()
-            Button {
-                selected = .b
-            } label: {
-                VStack(alignment: .center) {
-                    Image(systemName: "plus.circle")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 30)
-                }
-            }
+//            Button {
+//                selected = .b
+//            } label: {
+//                VStack(alignment: .center) {
+//                    Image(systemName: "plus.circle")
+//                        .resizable()
+//                        .scaledToFit()
+//                        .frame(width: 30)
+//                }
+//            }
             .foregroundStyle(selected == .b ? Color.accentColor : Color.primary)
             Spacer()
             Button {
                 selected = .c
             } label: {
                 VStack(alignment: .center) {
-                    Image(systemName: "person.circle")
+                    Image(systemName: "circle")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 30)
+                        .frame(width: 40)
+                        .bold()
                 }
             }
             .foregroundStyle(selected == .c ? Color.accentColor : Color.primary)

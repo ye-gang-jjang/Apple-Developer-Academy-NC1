@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C5B493B2BC8531500AA45A0 /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B493A2BC8531500AA45A0 /* GifImage.swift */; };
+		5C5B493D2BC8532100AA45A0 /* LogoMovingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B493C2BC8532100AA45A0 /* LogoMovingView.swift */; };
+		5C672A7F2BCA68FD004B3DCB /* warawara.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5C672A7E2BCA68FD004B3DCB /* warawara.gif */; };
 		5C8016122BC788DE00BEEEB4 /* WhyDoYouLiveLikeThatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8016112BC788DE00BEEEB4 /* WhyDoYouLiveLikeThatApp.swift */; };
 		5C8016142BC788DE00BEEEB4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8016132BC788DE00BEEEB4 /* ContentView.swift */; };
 		5C8016162BC788DF00BEEEB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C8016152BC788DF00BEEEB4 /* Assets.xcassets */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C5B493A2BC8531500AA45A0 /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
+		5C5B493C2BC8532100AA45A0 /* LogoMovingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoMovingView.swift; sourceTree = "<group>"; };
+		5C672A7E2BCA68FD004B3DCB /* warawara.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = warawara.gif; path = ../../../../Downloads/warawara.gif; sourceTree = "<group>"; };
 		5C80160E2BC788DE00BEEEB4 /* WhyDoYouLiveLikeThat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhyDoYouLiveLikeThat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8016112BC788DE00BEEEB4 /* WhyDoYouLiveLikeThatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhyDoYouLiveLikeThatApp.swift; sourceTree = "<group>"; };
 		5C8016132BC788DE00BEEEB4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,11 +68,10 @@
 			isa = PBXGroup;
 			children = (
 				5C9BED212BC7A3AA00861FA2 /* View */,
-				5C9BED1C2BC7A2DA00861FA2 /* Utills */,
 				5C8016112BC788DE00BEEEB4 /* WhyDoYouLiveLikeThatApp.swift */,
+				5C672A7E2BCA68FD004B3DCB /* warawara.gif */,
 				5C8016152BC788DF00BEEEB4 /* Assets.xcassets */,
 				5C8016172BC788DF00BEEEB4 /* Preview Content */,
-				5C8016212BC7A18900BEEEB4 /* SplashView.swift */,
 			);
 			path = WhyDoYouLiveLikeThat;
 			sourceTree = "<group>";
@@ -84,6 +89,7 @@
 			children = (
 				5C80161F2BC7A08A00BEEEB4 /* TabBar.swift */,
 				5C9BED1D2BC7A2EF00861FA2 /* Color+hexColor.swift */,
+				5C8016212BC7A18900BEEEB4 /* SplashView.swift */,
 			);
 			path = Utills;
 			sourceTree = "<group>";
@@ -91,11 +97,30 @@
 		5C9BED212BC7A3AA00861FA2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5C9BED1F2BC7A3A200861FA2 /* CalendarView.swift */,
+				5C9BED1C2BC7A2DA00861FA2 /* Utills */,
+				5CA9763A2BC834B300AE460E /* Mypage */,
+				5CA976392BC834AB00AE460E /* Calendar */,
 				5C8016132BC788DE00BEEEB4 /* ContentView.swift */,
-				5C9BED222BC7A3B900861FA2 /* MypageView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		5CA976392BC834AB00AE460E /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				5C9BED1F2BC7A3A200861FA2 /* CalendarView.swift */,
+				5C5B493A2BC8531500AA45A0 /* GifImage.swift */,
+				5C5B493C2BC8532100AA45A0 /* LogoMovingView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		5CA9763A2BC834B300AE460E /* Mypage */ = {
+			isa = PBXGroup;
+			children = (
+				5C9BED222BC7A3B900861FA2 /* MypageView.swift */,
+			);
+			path = Mypage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,11 +160,12 @@
 			};
 			buildConfigurationList = 5C8016092BC788DE00BEEEB4 /* Build configuration list for PBXProject "WhyDoYouLiveLikeThat" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = ko;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = 5C8016052BC788DE00BEEEB4;
 			productRefGroup = 5C80160F2BC788DE00BEEEB4 /* Products */;
@@ -157,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C8016192BC788DF00BEEEB4 /* Preview Assets.xcassets in Resources */,
+				5C672A7F2BCA68FD004B3DCB /* warawara.gif in Resources */,
 				5C8016162BC788DF00BEEEB4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,7 +200,9 @@
 				5C9BED232BC7A3B900861FA2 /* MypageView.swift in Sources */,
 				5C9BED202BC7A3A200861FA2 /* CalendarView.swift in Sources */,
 				5C8016142BC788DE00BEEEB4 /* ContentView.swift in Sources */,
+				5C5B493D2BC8532100AA45A0 /* LogoMovingView.swift in Sources */,
 				5C9BED1E2BC7A2EF00861FA2 /* Color+hexColor.swift in Sources */,
+				5C5B493B2BC8531500AA45A0 /* GifImage.swift in Sources */,
 				5C8016122BC788DE00BEEEB4 /* WhyDoYouLiveLikeThatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
