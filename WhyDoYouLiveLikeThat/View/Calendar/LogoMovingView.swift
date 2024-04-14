@@ -15,13 +15,12 @@ struct LogoMovingView: View {
             .font(.title)
             .foregroundStyle(.red)
         
-        
-//            .offset(x: isTrailing ? UIScreen.main.bounds.width : -UIScreen.main.bounds.width)
-//            .onAppear {
-//                withAnimation(Animation.linear(duration: 3.5).repeatForever(autoreverses: false)) {
-//                    self.isTrailing.toggle()
-//                }
-//            }
+            .offset(x: isTrailing ? UIScreen.main.bounds.width : -UIScreen.main.bounds.width)
+            .onAppear {
+                withAnimation(Animation.linear(duration: 3.5).repeatForever(autoreverses: false)) {
+                    self.isTrailing.toggle()
+                }
+            }
     }
 }
 

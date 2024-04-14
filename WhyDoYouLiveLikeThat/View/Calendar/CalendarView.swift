@@ -12,17 +12,26 @@ struct CalendarView: View {
     @State var isToggle = false
     
     var body: some View {
-        VStack {
+        VStack(spacing: 100) {
             LogoMovingView()
-
-            Form {
-                DatePicker(
-                    "ㅎㅇ",
-                    selection: $selectedDate,
-                    displayedComponents: [.date]
-                )
-                    .datePickerStyle(.graphical)
-            }
+            
+            DatePicker(
+                "Calendar",
+                selection: $selectedDate,
+                displayedComponents: [.date]
+            )
+            .datePickerStyle(.graphical)
+            
+            Button(action: {
+                
+            }, label: {
+                VStack {
+                    GifImage("warawara")
+                        .frame(width: 100, height: 100)
+                }
+                
+            })
+            
         }
     }
 }

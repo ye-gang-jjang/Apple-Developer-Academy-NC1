@@ -10,6 +10,7 @@
 		5C5B493B2BC8531500AA45A0 /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B493A2BC8531500AA45A0 /* GifImage.swift */; };
 		5C5B493D2BC8532100AA45A0 /* LogoMovingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B493C2BC8532100AA45A0 /* LogoMovingView.swift */; };
 		5C672A7F2BCA68FD004B3DCB /* warawara.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5C672A7E2BCA68FD004B3DCB /* warawara.gif */; };
+		5C672A812BCAFC49004B3DCB /* SubTitleBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C672A802BCAFC49004B3DCB /* SubTitleBoxView.swift */; };
 		5C8016122BC788DE00BEEEB4 /* WhyDoYouLiveLikeThatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8016112BC788DE00BEEEB4 /* WhyDoYouLiveLikeThatApp.swift */; };
 		5C8016142BC788DE00BEEEB4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8016132BC788DE00BEEEB4 /* ContentView.swift */; };
 		5C8016162BC788DF00BEEEB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C8016152BC788DF00BEEEB4 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		5C5B493A2BC8531500AA45A0 /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
 		5C5B493C2BC8532100AA45A0 /* LogoMovingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoMovingView.swift; sourceTree = "<group>"; };
 		5C672A7E2BCA68FD004B3DCB /* warawara.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = warawara.gif; path = ../../../../Downloads/warawara.gif; sourceTree = "<group>"; };
+		5C672A802BCAFC49004B3DCB /* SubTitleBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTitleBoxView.swift; sourceTree = "<group>"; };
 		5C80160E2BC788DE00BEEEB4 /* WhyDoYouLiveLikeThat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhyDoYouLiveLikeThat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8016112BC788DE00BEEEB4 /* WhyDoYouLiveLikeThatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhyDoYouLiveLikeThatApp.swift; sourceTree = "<group>"; };
 		5C8016132BC788DE00BEEEB4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				5C9BED1F2BC7A3A200861FA2 /* CalendarView.swift */,
 				5C5B493A2BC8531500AA45A0 /* GifImage.swift */,
 				5C5B493C2BC8532100AA45A0 /* LogoMovingView.swift */,
+				5C672A802BCAFC49004B3DCB /* SubTitleBoxView.swift */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				5C9BED202BC7A3A200861FA2 /* CalendarView.swift in Sources */,
 				5C8016142BC788DE00BEEEB4 /* ContentView.swift in Sources */,
 				5C5B493D2BC8532100AA45A0 /* LogoMovingView.swift in Sources */,
+				5C672A812BCAFC49004B3DCB /* SubTitleBoxView.swift in Sources */,
 				5C9BED1E2BC7A2EF00861FA2 /* Color+hexColor.swift in Sources */,
 				5C5B493B2BC8531500AA45A0 /* GifImage.swift in Sources */,
 				5C8016122BC788DE00BEEEB4 /* WhyDoYouLiveLikeThatApp.swift in Sources */,
