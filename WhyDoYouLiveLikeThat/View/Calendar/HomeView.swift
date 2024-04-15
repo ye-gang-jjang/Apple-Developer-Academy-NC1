@@ -7,23 +7,30 @@
 
 import SwiftUI
 
+enum BoxCellColor: String, CaseIterable {
+    case red = "FF7683"
+    case orange = "FEC344"
+    case yellow = "FFEA2E"
+    case green = "79BF3C"
+    case blue = "5FBFE4"
+    
+}
+
 struct HomeView: View {
     @State private var year: String = "2024"
     @Binding var selectedDate: Date
     
     var body: some View {
         NavigationStack {
-            VStack(spacing: 20) {
+            VStack {
                 Text("\(year) Total")
                     .font(.title)
                     .bold()
                 
-                HStack(spacing: 13) {
-                    CheckBoxCell(hexColor: "FF7683")
-                    CheckBoxCell(hexColor: "FEC344")
-                    CheckBoxCell(hexColor: "FFEA2E")
-                    CheckBoxCell(hexColor: "79BF3C")
-                    CheckBoxCell(hexColor: "5FBFE4")
+                HStack(spacing: 10) {
+                    ForEach(BoxCellColor.allCases, id: \.self) { color in
+                        CheckBoxCell(hexColor: color.rawValue)
+                    }
                 }
                 
                 HStack {
@@ -33,24 +40,25 @@ struct HomeView: View {
                     Text("갓생")
                         .padding(.trailing, 65)
                 }
-
-                CalenderView(month: Date.now)
-//                    .frame(maxHeight: 400)
                 
+                CalendarView(month: Date.now)
+                    .frame(width: .infinity, height: 400)
+                    .border(.red)
+                
+                Spacer()
                 
                 Button(action: {
-                // MARK: - 작성 페이지로 넘어가는 NavigationLink 달아야 됨
+                    // MARK: - 작성 페이지로 넘어가는 NavigationLink 달아야 됨
                     
                 }) {
                     VStack {
-//                        RowLogoMoving()
+                        RowLogoMoving()
                         
                         GifImage("warawara")
-                            .frame(width: 200, height: 200)
+                            .frame(width: 100, height: 100)
                             .border(Color.red)
                     }
                 }
-                
             }
         }
     }
