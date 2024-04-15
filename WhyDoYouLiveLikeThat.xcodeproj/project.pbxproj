@@ -7,36 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C28B2272BCBE84D009C566F /* CheckBoxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C28B2262BCBE84D009C566F /* CheckBoxCell.swift */; };
 		5C5B493B2BC8531500AA45A0 /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B493A2BC8531500AA45A0 /* GifImage.swift */; };
-		5C5B493D2BC8532100AA45A0 /* LogoMovingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B493C2BC8532100AA45A0 /* LogoMovingView.swift */; };
+		5C5B493D2BC8532100AA45A0 /* RowLogoMoving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B493C2BC8532100AA45A0 /* RowLogoMoving.swift */; };
 		5C672A7F2BCA68FD004B3DCB /* warawara.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5C672A7E2BCA68FD004B3DCB /* warawara.gif */; };
-		5C672A812BCAFC49004B3DCB /* SubTitleBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C672A802BCAFC49004B3DCB /* SubTitleBoxView.swift */; };
 		5C8016122BC788DE00BEEEB4 /* WhyDoYouLiveLikeThatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8016112BC788DE00BEEEB4 /* WhyDoYouLiveLikeThatApp.swift */; };
 		5C8016142BC788DE00BEEEB4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8016132BC788DE00BEEEB4 /* ContentView.swift */; };
 		5C8016162BC788DF00BEEEB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C8016152BC788DF00BEEEB4 /* Assets.xcassets */; };
 		5C8016192BC788DF00BEEEB4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C8016182BC788DF00BEEEB4 /* Preview Assets.xcassets */; };
-		5C8016202BC7A08A00BEEEB4 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C80161F2BC7A08A00BEEEB4 /* TabBar.swift */; };
 		5C8016222BC7A18900BEEEB4 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8016212BC7A18900BEEEB4 /* SplashView.swift */; };
 		5C9BED1E2BC7A2EF00861FA2 /* Color+hexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9BED1D2BC7A2EF00861FA2 /* Color+hexColor.swift */; };
-		5C9BED202BC7A3A200861FA2 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9BED1F2BC7A3A200861FA2 /* CalendarView.swift */; };
+		5C9BED202BC7A3A200861FA2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9BED1F2BC7A3A200861FA2 /* HomeView.swift */; };
 		5C9BED232BC7A3B900861FA2 /* MypageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9BED222BC7A3B900861FA2 /* MypageView.swift */; };
+		5CEB13FA2BCCFA3D00DA29F9 /* CalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEB13F92BCCFA3D00DA29F9 /* CalenderView.swift */; };
+		5CEB13FC2BCCFC9C00DA29F9 /* DataSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEB13FB2BCCFC9C00DA29F9 /* DataSheetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C28B2262BCBE84D009C566F /* CheckBoxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxCell.swift; sourceTree = "<group>"; };
 		5C5B493A2BC8531500AA45A0 /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
-		5C5B493C2BC8532100AA45A0 /* LogoMovingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoMovingView.swift; sourceTree = "<group>"; };
+		5C5B493C2BC8532100AA45A0 /* RowLogoMoving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowLogoMoving.swift; sourceTree = "<group>"; };
 		5C672A7E2BCA68FD004B3DCB /* warawara.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = warawara.gif; path = ../../../../Downloads/warawara.gif; sourceTree = "<group>"; };
-		5C672A802BCAFC49004B3DCB /* SubTitleBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTitleBoxView.swift; sourceTree = "<group>"; };
 		5C80160E2BC788DE00BEEEB4 /* WhyDoYouLiveLikeThat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhyDoYouLiveLikeThat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8016112BC788DE00BEEEB4 /* WhyDoYouLiveLikeThatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhyDoYouLiveLikeThatApp.swift; sourceTree = "<group>"; };
 		5C8016132BC788DE00BEEEB4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5C8016152BC788DF00BEEEB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C8016182BC788DF00BEEEB4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5C80161F2BC7A08A00BEEEB4 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		5C8016212BC7A18900BEEEB4 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		5C9BED1D2BC7A2EF00861FA2 /* Color+hexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+hexColor.swift"; sourceTree = "<group>"; };
-		5C9BED1F2BC7A3A200861FA2 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		5C9BED1F2BC7A3A200861FA2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		5C9BED222BC7A3B900861FA2 /* MypageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageView.swift; sourceTree = "<group>"; };
+		5CEB13F92BCCFA3D00DA29F9 /* CalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderView.swift; sourceTree = "<group>"; };
+		5CEB13FB2BCCFC9C00DA29F9 /* DataSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSheetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +91,6 @@
 		5C9BED1C2BC7A2DA00861FA2 /* Utills */ = {
 			isa = PBXGroup;
 			children = (
-				5C80161F2BC7A08A00BEEEB4 /* TabBar.swift */,
 				5C9BED1D2BC7A2EF00861FA2 /* Color+hexColor.swift */,
 				5C8016212BC7A18900BEEEB4 /* SplashView.swift */,
 			);
@@ -110,10 +111,12 @@
 		5CA976392BC834AB00AE460E /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
-				5C9BED1F2BC7A3A200861FA2 /* CalendarView.swift */,
+				5C9BED1F2BC7A3A200861FA2 /* HomeView.swift */,
 				5C5B493A2BC8531500AA45A0 /* GifImage.swift */,
-				5C5B493C2BC8532100AA45A0 /* LogoMovingView.swift */,
-				5C672A802BCAFC49004B3DCB /* SubTitleBoxView.swift */,
+				5C28B2262BCBE84D009C566F /* CheckBoxCell.swift */,
+				5C5B493C2BC8532100AA45A0 /* RowLogoMoving.swift */,
+				5CEB13F92BCCFA3D00DA29F9 /* CalenderView.swift */,
+				5CEB13FB2BCCFC9C00DA29F9 /* DataSheetView.swift */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -198,15 +201,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C8016202BC7A08A00BEEEB4 /* TabBar.swift in Sources */,
 				5C8016222BC7A18900BEEEB4 /* SplashView.swift in Sources */,
 				5C9BED232BC7A3B900861FA2 /* MypageView.swift in Sources */,
-				5C9BED202BC7A3A200861FA2 /* CalendarView.swift in Sources */,
+				5CEB13FC2BCCFC9C00DA29F9 /* DataSheetView.swift in Sources */,
+				5C9BED202BC7A3A200861FA2 /* HomeView.swift in Sources */,
 				5C8016142BC788DE00BEEEB4 /* ContentView.swift in Sources */,
-				5C5B493D2BC8532100AA45A0 /* LogoMovingView.swift in Sources */,
-				5C672A812BCAFC49004B3DCB /* SubTitleBoxView.swift in Sources */,
+				5C5B493D2BC8532100AA45A0 /* RowLogoMoving.swift in Sources */,
+				5C28B2272BCBE84D009C566F /* CheckBoxCell.swift in Sources */,
 				5C9BED1E2BC7A2EF00861FA2 /* Color+hexColor.swift in Sources */,
 				5C5B493B2BC8531500AA45A0 /* GifImage.swift in Sources */,
+				5CEB13FA2BCCFA3D00DA29F9 /* CalenderView.swift in Sources */,
 				5C8016122BC788DE00BEEEB4 /* WhyDoYouLiveLikeThatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
