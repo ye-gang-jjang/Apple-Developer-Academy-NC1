@@ -9,7 +9,8 @@ import SwiftUI
 
 
 struct CheckBoxCell: View {
-    @State var hexColor: String
+    let hexColor: String
+    let count: Int
     
     var body: some View {
         ZStack {
@@ -20,10 +21,13 @@ struct CheckBoxCell: View {
             RoundedRectangle(cornerRadius: 10)
                 .stroke(.gray)
                 .frame(width: 45, height: 45)
+            
+            Text("\(count)")
         }
     }
 }
 
+
 #Preview {
-    CheckBoxCell(hexColor: "FDE426")
+    CheckBoxCell(hexColor: "FDE426", count: 32)
 }

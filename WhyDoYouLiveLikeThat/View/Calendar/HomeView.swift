@@ -7,61 +7,99 @@
 
 import SwiftUI
 
-enum BoxCellColor: String, CaseIterable {
-    case red = "FF7683"
-    case orange = "FEC344"
-    case yellow = "FFEA2E"
-    case green = "79BF3C"
-    case blue = "5FBFE4"
-    
+struct cntData: Hashable {
+    var cnt: Int
 }
 
+enum BoxCellColor: Hashable {
+    case red(cntData)
+    case orange(cntData)
+    case yellow(cntData)
+    case green(cntData)
+    case blue(cntData)
+    
+    var hexColor: String {
+        switch self {
+        case .red: return "FF7683"
+        case .orange: return "FEC344"
+        case .yellow: return "FFEA2E"
+        case .green: return "79BF3C"
+        case .blue: return "5FBFE4"
+        }
+    }
+    
+    var count: Int {
+        switch self {
+        case .red(let data), .orange(let data), .yellow(let data), .green(let data), .blue(let data):
+            return data.cnt
+        }
+    }
+}
+
+
+
+
+let data: [BoxCellColor] = [
+    .red(cntData(cnt: 0)),
+    .orange(cntData(cnt: 10)),
+    .yellow(cntData(cnt: 30)),
+    .green(cntData(cnt: 50)),
+    .blue(cntData(cnt: 100))
+]
+
+
 struct HomeView: View {
+    @State var date = Date.now
     @State private var year: String = "2024"
     @Binding var selectedDate: Date
-    
+        
     var body: some View {
         NavigationStack {
             VStack {
-                Text("\(year) Total")
+                Text("\(HomeView.dateFormatter.string(from: date)) Total")
                     .font(.title)
                     .bold()
                 
-                HStack(spacing: 10) {
-                    ForEach(BoxCellColor.allCases, id: \.self) { color in
-                        CheckBoxCell(hexColor: color.rawValue)
-                    }
+                HStack(spacing: 20) {
+                    ForEach(data, id: \.self) { item in
+                            CheckBoxCell(hexColor: item.hexColor, count: item.count)
+                        }
                 }
                 
-                HStack {
+                HStack(alignment: .center) {
                     Text("혐생")
-                        .padding(.leading, 65)
+                        .padding(.leading, 50)
                     Spacer()
                     Text("갓생")
-                        .padding(.trailing, 65)
+                        .padding(.trailing, 50)
                 }
+                .padding(.bottom, 30)
                 
-                CalendarView(month: Date.now)
-                    .frame(width: .infinity, height: 400)
-                    .border(.red)
+                CalendarView(month: $date)
+                    .padding(.horizontal, 10)
                 
-                Spacer()
-                
-                Button(action: {
-                    // MARK: - 작성 페이지로 넘어가는 NavigationLink 달아야 됨
-                    
-                }) {
+                // WritingPageView로 이동하는 NavigationLink
+                NavigationLink(destination: ItemAddView()) {
                     VStack {
                         RowLogoMoving()
                         
                         GifImage("warawara")
-                            .frame(width: 100, height: 100)
-                            .border(Color.red)
+                            .frame(width: 150, height: 150)
                     }
                 }
             }
         }
     }
+}
+
+extension HomeView {
+    static let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "YYYY"
+        return formatter
+    }()
+    
+    static let weekdaySymbols = Calendar.current.veryShortWeekdaySymbols
 }
 
 #Preview {

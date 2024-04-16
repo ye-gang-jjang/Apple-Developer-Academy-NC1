@@ -1,18 +1,18 @@
 //
-//  DataSheetView.swift
+//  CalendarGridView.swift
 //  WhyDoYouLiveLikeThat
 //
-//  Created by yegang on 4/15/24.
+//  Created by yegang on 4/16/24.
 //
 
 import SwiftUI
 
-struct DataSheetView: View {
+struct CalendarGridView: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    DataSheetView()
+    CalendarGridView()
 }
