@@ -10,6 +10,8 @@
 		5C5B493B2BC8531500AA45A0 /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B493A2BC8531500AA45A0 /* GifImage.swift */; };
 		5C5B493D2BC8532100AA45A0 /* RowLogoMoving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B493C2BC8532100AA45A0 /* RowLogoMoving.swift */; };
 		5C672A7F2BCA68FD004B3DCB /* warawara.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5C672A7E2BCA68FD004B3DCB /* warawara.gif */; };
+		5C6C984F2BCF950D00951AE1 /* CalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6C984E2BCF950D00951AE1 /* CalendarModel.swift */; };
+		5C6C98512BCF970000951AE1 /* ChosunCentennial_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C6C98502BCF970000951AE1 /* ChosunCentennial_otf.otf */; };
 		5C8016122BC788DE00BEEEB4 /* WhyDoYouLiveLikeThatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8016112BC788DE00BEEEB4 /* WhyDoYouLiveLikeThatApp.swift */; };
 		5C8016142BC788DE00BEEEB4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8016132BC788DE00BEEEB4 /* ContentView.swift */; };
 		5C8016162BC788DF00BEEEB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C8016152BC788DF00BEEEB4 /* Assets.xcassets */; };
@@ -18,9 +20,11 @@
 		5C9BED1E2BC7A2EF00861FA2 /* Color+hexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9BED1D2BC7A2EF00861FA2 /* Color+hexColor.swift */; };
 		5C9BED202BC7A3A200861FA2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9BED1F2BC7A3A200861FA2 /* HomeView.swift */; };
 		5C9BED232BC7A3B900861FA2 /* MypageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9BED222BC7A3B900861FA2 /* MypageView.swift */; };
+		5CA43EB12BCEC8F800082698 /* ImageViewTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA43EB02BCEC8F800082698 /* ImageViewTester.swift */; };
 		5CB0CE4F2BCD5F040092B9C6 /* ItemAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB0CE4E2BCD5F040092B9C6 /* ItemAddView.swift */; };
 		5CB0CE532BCD644F0092B9C6 /* Date + DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB0CE522BCD644F0092B9C6 /* Date + DateFormatter.swift */; };
 		5CB0CE582BCD85410092B9C6 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB0CE572BCD85410092B9C6 /* ItemCell.swift */; };
+		5CC60FBE2BCEBD5100C4500F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC60FBD2BCEBD5100C4500F /* ImagePicker.swift */; };
 		5CCA384A2BCD463400A6D3EE /* CheckBoxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCA38492BCD463400A6D3EE /* CheckBoxCell.swift */; };
 		5CEB13FA2BCCFA3D00DA29F9 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEB13F92BCCFA3D00DA29F9 /* CalendarView.swift */; };
 		5CEB13FC2BCCFC9C00DA29F9 /* ItemShowSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEB13FB2BCCFC9C00DA29F9 /* ItemShowSheetView.swift */; };
@@ -30,6 +34,9 @@
 		5C5B493A2BC8531500AA45A0 /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
 		5C5B493C2BC8532100AA45A0 /* RowLogoMoving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowLogoMoving.swift; sourceTree = "<group>"; };
 		5C672A7E2BCA68FD004B3DCB /* warawara.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = warawara.gif; path = ../../../../Downloads/warawara.gif; sourceTree = "<group>"; };
+		5C6C984E2BCF950D00951AE1 /* CalendarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarModel.swift; sourceTree = "<group>"; };
+		5C6C98502BCF970000951AE1 /* ChosunCentennial_otf.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ChosunCentennial_otf.otf; sourceTree = "<group>"; };
+		5C71F0B52BCF5BA70036A655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5C80160E2BC788DE00BEEEB4 /* WhyDoYouLiveLikeThat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhyDoYouLiveLikeThat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8016112BC788DE00BEEEB4 /* WhyDoYouLiveLikeThatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhyDoYouLiveLikeThatApp.swift; sourceTree = "<group>"; };
 		5C8016132BC788DE00BEEEB4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -39,9 +46,11 @@
 		5C9BED1D2BC7A2EF00861FA2 /* Color+hexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+hexColor.swift"; sourceTree = "<group>"; };
 		5C9BED1F2BC7A3A200861FA2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		5C9BED222BC7A3B900861FA2 /* MypageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageView.swift; sourceTree = "<group>"; };
+		5CA43EB02BCEC8F800082698 /* ImageViewTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewTester.swift; sourceTree = "<group>"; };
 		5CB0CE4E2BCD5F040092B9C6 /* ItemAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemAddView.swift; sourceTree = "<group>"; };
 		5CB0CE522BCD644F0092B9C6 /* Date + DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + DateFormatter.swift"; sourceTree = "<group>"; };
 		5CB0CE572BCD85410092B9C6 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		5CC60FBD2BCEBD5100C4500F /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		5CCA38492BCD463400A6D3EE /* CheckBoxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxCell.swift; sourceTree = "<group>"; };
 		5CEB13F92BCCFA3D00DA29F9 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		5CEB13FB2BCCFC9C00DA29F9 /* ItemShowSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemShowSheetView.swift; sourceTree = "<group>"; };
@@ -58,6 +67,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C71F0B62BCF5C620036A655 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5C6C98502BCF970000951AE1 /* ChosunCentennial_otf.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		5C8016052BC788DE00BEEEB4 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +94,8 @@
 		5C8016102BC788DE00BEEEB4 /* WhyDoYouLiveLikeThat */ = {
 			isa = PBXGroup;
 			children = (
+				5C71F0B62BCF5C620036A655 /* Fonts */,
+				5C71F0B52BCF5BA70036A655 /* Info.plist */,
 				5CB0CE512BCD63E50092B9C6 /* Model */,
 				5CB0CE502BCD63DD0092B9C6 /* ViewModel */,
 				5C9BED1C2BC7A2DA00861FA2 /* Utills */,
@@ -103,6 +122,8 @@
 				5C9BED1D2BC7A2EF00861FA2 /* Color+hexColor.swift */,
 				5C8016212BC7A18900BEEEB4 /* SplashView.swift */,
 				5CB0CE522BCD644F0092B9C6 /* Date + DateFormatter.swift */,
+				5CC60FBD2BCEBD5100C4500F /* ImagePicker.swift */,
+				5CA43EB02BCEC8F800082698 /* ImageViewTester.swift */,
 			);
 			path = Utills;
 			sourceTree = "<group>";
@@ -148,6 +169,7 @@
 		5CB0CE512BCD63E50092B9C6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5C6C984E2BCF950D00951AE1 /* CalendarModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -221,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C6C98512BCF970000951AE1 /* ChosunCentennial_otf.otf in Resources */,
 				5C8016192BC788DF00BEEEB4 /* Preview Assets.xcassets in Resources */,
 				5C672A7F2BCA68FD004B3DCB /* warawara.gif in Resources */,
 				5C8016162BC788DF00BEEEB4 /* Assets.xcassets in Resources */,
@@ -234,10 +257,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CA43EB12BCEC8F800082698 /* ImageViewTester.swift in Sources */,
 				5C8016222BC7A18900BEEEB4 /* SplashView.swift in Sources */,
 				5C9BED232BC7A3B900861FA2 /* MypageView.swift in Sources */,
 				5CB0CE4F2BCD5F040092B9C6 /* ItemAddView.swift in Sources */,
 				5CEB13FC2BCCFC9C00DA29F9 /* ItemShowSheetView.swift in Sources */,
+				5C6C984F2BCF950D00951AE1 /* CalendarModel.swift in Sources */,
 				5CB0CE582BCD85410092B9C6 /* ItemCell.swift in Sources */,
 				5C9BED202BC7A3A200861FA2 /* HomeView.swift in Sources */,
 				5C8016142BC788DE00BEEEB4 /* ContentView.swift in Sources */,
@@ -246,6 +271,7 @@
 				5C9BED1E2BC7A2EF00861FA2 /* Color+hexColor.swift in Sources */,
 				5C5B493B2BC8531500AA45A0 /* GifImage.swift in Sources */,
 				5CEB13FA2BCCFA3D00DA29F9 /* CalendarView.swift in Sources */,
+				5CC60FBE2BCEBD5100C4500F /* ImagePicker.swift in Sources */,
 				5C8016122BC788DE00BEEEB4 /* WhyDoYouLiveLikeThatApp.swift in Sources */,
 				5CB0CE532BCD644F0092B9C6 /* Date + DateFormatter.swift in Sources */,
 			);
@@ -306,7 +332,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -363,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -384,6 +410,7 @@
 				DEVELOPMENT_TEAM = DM3CXND59Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WhyDoYouLiveLikeThat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -413,6 +440,7 @@
 				DEVELOPMENT_TEAM = DM3CXND59Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WhyDoYouLiveLikeThat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

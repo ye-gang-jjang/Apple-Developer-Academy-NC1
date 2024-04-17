@@ -28,7 +28,7 @@ struct RowLogoMoving: View {
 
     var body: some View {
         Text("나는 왜 이렇게 사는가")
-            .font(.title)
+            .font(.custom("ChosunCentennial", size: 42))
             .foregroundColor(.red)
             .offset(x: offsetX)
             .onChange(of: offsetX) { _ in

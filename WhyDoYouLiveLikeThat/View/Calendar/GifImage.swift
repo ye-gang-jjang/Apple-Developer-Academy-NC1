@@ -9,15 +9,17 @@ import SwiftUI
 import WebKit
 
 struct GifImage: UIViewRepresentable {
-    private let ImgName: String
+    private let imgName: String
+    private let scaleFactor: CGFloat
     
-    init(_ ImgName: String) {
-        self.ImgName = ImgName
+    init(_ imgName: String, scaleFactor: CGFloat = 0.2) {
+        self.imgName = imgName
+        self.scaleFactor = scaleFactor
     }
     
     func makeUIView(context: Context) -> WKWebView {
         let webView = WKWebView()
-        let url = Bundle.main.url(forResource: ImgName, withExtension: "gif")!
+        let url = Bundle.main.url(forResource: imgName, withExtension: "gif")!
         let data = try! Data(contentsOf: url)
         
         webView.load(
@@ -27,6 +29,9 @@ struct GifImage: UIViewRepresentable {
             baseURL: url.deletingLastPathComponent()
         )
         
+        // Apply scale transform to reduce size
+        webView.transform = CGAffineTransform(scaleX: scaleFactor, y: scaleFactor)
+        
         return webView
     }
     
@@ -35,8 +40,6 @@ struct GifImage: UIViewRepresentable {
     }
     
     typealias UIViewType = WKWebView
-    
-    
 }
 
 #Preview {

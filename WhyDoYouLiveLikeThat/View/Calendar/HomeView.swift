@@ -40,53 +40,49 @@ enum BoxCellColor: Hashable {
 
 
 let data: [BoxCellColor] = [
-    .red(cntData(cnt: 0)),
-    .orange(cntData(cnt: 10)),
-    .yellow(cntData(cnt: 30)),
-    .green(cntData(cnt: 50)),
-    .blue(cntData(cnt: 100))
+    .red(cntData(cnt: 12)),
+    .orange(cntData(cnt: 21)),
+    .yellow(cntData(cnt: 33)),
+    .green(cntData(cnt: 58)),
+    .blue(cntData(cnt: 10))
 ]
 
 
 struct HomeView: View {
     @State var date = Date.now
-    @State private var year: String = "2024"
     @Binding var selectedDate: Date
-        
+    
     var body: some View {
         NavigationStack {
-            VStack {
-                Text("\(HomeView.dateFormatter.string(from: date)) Total")
-                    .font(.title)
-                    .bold()
-                
-                HStack(spacing: 20) {
-                    ForEach(data, id: \.self) { item in
-                            CheckBoxCell(hexColor: item.hexColor, count: item.count)
-                        }
+            Text("\(HomeView.dateFormatter.string(from: date)) Total")
+                .font(.title)
+                .bold()
+                .padding(.top, 50)
+            
+            HStack(spacing: 20) {
+                ForEach(data, id: \.self) { item in
+                    CheckBoxCell(hexColor: item.hexColor, count: item.count)
                 }
-                
-                HStack(alignment: .center) {
-                    Text("혐생")
-                        .padding(.leading, 50)
-                    Spacer()
-                    Text("갓생")
-                        .padding(.trailing, 50)
-                }
-                .padding(.bottom, 30)
-                
-                CalendarView(month: $date)
-                    .padding(.horizontal, 10)
-                
-                // WritingPageView로 이동하는 NavigationLink
-                NavigationLink(destination: ItemAddView()) {
-                    VStack {
-                        RowLogoMoving()
-                        
-                        GifImage("warawara")
-                            .frame(width: 150, height: 150)
-                    }
-                }
+            }
+            
+            HStack(alignment: .center) {
+                Text("혐생")
+                    .padding(.leading, 50)
+                Spacer()
+                Text("갓생")
+                    .padding(.trailing, 50)
+            }
+            .padding(.bottom, 10)
+            
+            CalendarView(month: $date)
+                .padding(.horizontal, 10)
+            
+            RowLogoMoving()
+            
+            // WritingPageView로 이동하는 NavigationLink
+            NavigationLink(destination: ItemAddView()) {
+                GifImage("warawara")
+                    .frame(width: 150, height: 150)
             }
         }
     }
@@ -95,7 +91,7 @@ struct HomeView: View {
 extension HomeView {
     static let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateFormat = "YYYY"
+        formatter.dateFormat = "MM 월"
         return formatter
     }()
     

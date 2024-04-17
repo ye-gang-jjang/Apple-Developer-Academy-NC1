@@ -70,7 +70,6 @@ struct CalendarView: View {
                 }
             }
         }
-        //        .frame(width: .infinity, height: .infinity)
     }
     
     // MARK: - 날짜 그리드 뷰
@@ -102,7 +101,6 @@ struct CalendarView: View {
             }
         }
         .frame(width: .infinity, height: 290)
-        //        .border(.red)
     }
 }
 

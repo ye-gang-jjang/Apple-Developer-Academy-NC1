@@ -29,5 +29,5 @@ struct CheckBoxCell: View {
 
 
 #Preview {
-    CheckBoxCell(hexColor: "FDE426", count: 32)
+    CheckBoxCell(hexColor: "FDE426", count: 10)
 }
