@@ -13,6 +13,10 @@ struct ItemShowSheetView: View {
     @State var text: String = "안녕하세요 라프에요"
     @State var isEditing = false
     
+    @Binding var itemDateList: [ItemData]
+    @Binding var selectedDate : Date?
+    
+    
     var body: some View {
         NavigationStack {
             VStack {
@@ -24,6 +28,7 @@ struct ItemShowSheetView: View {
                     .offset(y: -40)
                 
                 TabView {
+                    
                     ItemCell(imgName: "vvv")
                     ItemCell(imgName: "www")
                     ItemCell(imgName: "nnn")
@@ -36,6 +41,8 @@ struct ItemShowSheetView: View {
                 TextField("제목인디", text: $title)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding(.horizontal, 20)
+                
+//                Text("\(selectedDate)")
                 
                 // 내용 셀
                 ZStack(alignment: .topLeading) {
@@ -69,8 +76,9 @@ struct ItemShowSheetView: View {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
                         //TODO: - 저장하기 함수 만들기
+                        dismiss()
                     } label: {
-                        Text("저장")
+                        Text("수정")
                             .bold()
                     }
                 }
@@ -79,6 +87,6 @@ struct ItemShowSheetView: View {
     }
 }
 
-#Preview {
-    ItemShowSheetView()
-}
+//#Preview {
+//    ItemShowSheetView(itemDateList: [], selectedDate: .constant(.now))
+//}

@@ -89,18 +89,19 @@ struct CalendarView: View {
                         let date = getDate(for: index - firstWeekday)
                         let day = index - firstWeekday + 1
                         
-                        // TODO: - 필터기능
+                        // 필터기능
                         let item = itemDateList.filter({ $0.date == Calendar.current.startOfDay(for: date)}).first
                             
                         CellView(date: date, day: day, item: item)
                             .onTapGesture {
                                 selectedDate = date
                             }
-                            .sheet(item: $selectedDate) { date in
-                                ItemShowSheetView()
-                            }
+                            
                             
                     }
+                }.sheet(item: $selectedDate) { date in
+                    
+                    ItemShowSheetView(itemDateList: $itemDateList, selectedDate: $selectedDate)
                 }
             }
 
@@ -123,7 +124,7 @@ private struct CellView: View {
 //            }
             if let newItem = item {
                 RoundedRectangle(cornerRadius: 5)
-                    .stroke(.green)
+                    .foregroundStyle(Color(hexColor: "79BF3C"))
                     .frame(width: 40, height: 40)
                     .overlay(Text(String(day)))
                     .foregroundColor(.black)
@@ -137,7 +138,7 @@ private struct CellView: View {
         }
     }
 }
-
-#Preview {
-    CalendarView(month: .constant(Date.now), itemDateList: .constant([]))
-}
+//
+//#Preview {
+//    CalendarView(month: .constant(Date.now), itemDateList: .constant([]))
+//}

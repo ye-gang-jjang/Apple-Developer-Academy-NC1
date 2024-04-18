@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     @State var date = Date.now
     @State var itemDateList: [ItemData] = []
-    @Binding var selectedDate: Date
+//    @Binding var selectedDate: Date
     
     var body: some View {
         NavigationStack {
@@ -50,5 +50,5 @@ struct HomeView: View {
 
 
 #Preview {
-    HomeView(selectedDate: .constant(Date()))
+    HomeView()
 }

@@ -6,7 +6,7 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             if showMainView {
-                HomeView(selectedDate: .constant(Date()))
+                HomeView()
             }
             else {
                 SplashView()

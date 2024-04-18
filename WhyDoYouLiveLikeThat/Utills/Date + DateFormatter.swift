@@ -82,7 +82,7 @@ extension CalendarView {
     func canMoveToPreviousMonth() -> Bool {
       let currentDate = Date()
       let calendar = Calendar.current
-      let targetDate = calendar.date(byAdding: .month, value: -3, to: currentDate) ?? currentDate
+      let targetDate = calendar.date(byAdding: .month, value: -12, to: currentDate) ?? currentDate
         
       if adjustedMonth(by: -1) < targetDate {
         return false

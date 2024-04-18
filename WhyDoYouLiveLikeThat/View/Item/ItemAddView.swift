@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ItemAddView: View {
+    @Environment(\.dismiss) private var dismiss
     @Binding var itemDateList: [ItemData]
     @State var title: String = ""
     @State var text: String = ""
@@ -60,6 +61,7 @@ struct ItemAddView: View {
                     let newItem = ItemData(date: Calendar.current.startOfDay(for: Date()), memoTitle: title, memoContent: text)
 //                    Calendar.getDate(for: <#T##Int#>)
                     itemDateList.append(newItem)
+                    dismiss()
                     print(newItem)
                     
                 } label: {
