@@ -14,7 +14,7 @@ struct ItemShowSheetView: View {
     @State var isEditing = false
     
     @Binding var itemDateList: [ItemData]
-    @Binding var selectedDate : Date?
+    @State var itemData : ItemData
     
     
     var body: some View {
@@ -38,7 +38,7 @@ struct ItemShowSheetView: View {
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
                 
                 // 제목 셀
-                TextField("제목인디", text: $title)
+                Text(itemData.memoTitle)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding(.horizontal, 20)
                 
@@ -49,7 +49,7 @@ struct ItemShowSheetView: View {
                     RoundedRectangle(cornerRadius: 8)
                         .stroke(.gray.opacity(1), lineWidth: 0.5)
                     
-                    TextEditor(text: $text)
+                    Text(itemData.memoContent)
                         .foregroundColor(.primary)
                         .padding(3)
                     
@@ -73,15 +73,15 @@ struct ItemShowSheetView: View {
                     }
                 }
                 
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button {
-                        //TODO: - 저장하기 함수 만들기
-                        dismiss()
-                    } label: {
-                        Text("수정")
-                            .bold()
-                    }
-                }
+//                ToolbarItem(placement: .topBarTrailing) {
+//                    Button {
+//                        //TODO: - 저장하기 함수 만들기
+//                        dismiss()
+//                    } label: {
+//                        Text("수정")
+//                            .bold()
+//                    }
+//                }
             }
         }
     }

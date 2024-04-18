@@ -14,6 +14,9 @@ struct ItemAddView: View {
     @State var text: String = ""
     @State var isEditing = false
     
+    @State var selectedLevel: Level = .level3
+    
+    
     var body: some View {
         NavigationStack {
             VStack {
@@ -26,6 +29,13 @@ struct ItemAddView: View {
                 .frame(width: 300, height: 400)
                 .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+                
+                Picker("", selection: $selectedLevel) {
+                    ForEach(Level.allCases, id: \.self) { level in
+                        Text(level.rawValue)
+                    }
+                }
+                .pickerStyle(.palette)
                 
                 // 제목 셀
                 TextField("제목인디", text: $title)
@@ -58,7 +68,7 @@ struct ItemAddView: View {
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
-                    let newItem = ItemData(date: Calendar.current.startOfDay(for: Date()), memoTitle: title, memoContent: text)
+                    let newItem = ItemData(date: Calendar.current.startOfDay(for: Date()), memoTitle: title, memoContent: text, level: selectedLevel)
 //                    Calendar.getDate(for: <#T##Int#>)
                     itemDateList.append(newItem)
                     dismiss()

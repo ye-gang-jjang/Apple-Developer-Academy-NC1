@@ -99,9 +99,11 @@ struct CalendarView: View {
                             
                             
                     }
-                }.sheet(item: $selectedDate) { date in
-                    
-                    ItemShowSheetView(itemDateList: $itemDateList, selectedDate: $selectedDate)
+                }
+                .sheet(item: $selectedDate) { date in
+                    if let filterdItem = itemDateList.filter({ Calendar.current.startOfDay(for: date) == Calendar.current.startOfDay(for: $0.date) }).first {
+                        ItemShowSheetView(itemDateList: $itemDateList, itemData: filterdItem)
+                    }
                 }
             }
 
@@ -116,6 +118,26 @@ private struct CellView: View {
     var day: Int
     var item: ItemData?
     
+    
+    var hexColor: String {
+        if let newItem = item {
+            switch newItem.level {
+            case .level1:
+                return "FF7683"
+            case .level2:
+                return  "FEC344"
+            case .level3:
+                return "FFEA2E"
+            case .level4:
+                return "79BF3C"
+            case .level5:
+                return "5FBFE4"
+            }
+        }
+        return "FF7683"
+    }
+    
+    
     var body: some View {
         VStack {
             // day 날짜 + 사각형
@@ -124,7 +146,7 @@ private struct CellView: View {
 //            }
             if let newItem = item {
                 RoundedRectangle(cornerRadius: 5)
-                    .foregroundStyle(Color(hexColor: "79BF3C"))
+                    .foregroundStyle(Color(hexColor: hexColor))
                     .frame(width: 40, height: 40)
                     .overlay(Text(String(day)))
                     .foregroundColor(.black)

@@ -11,11 +11,11 @@ struct ItemData: Identifiable {
     var date: Date
     var memoTitle: String
     var memoContent: String
-//    var level: Level
+    var level: Level
 //    var image: [Image]
 }
 
-enum Level: Int {
+enum Level: String, CaseIterable {
     case level1
     case level2
     case level3

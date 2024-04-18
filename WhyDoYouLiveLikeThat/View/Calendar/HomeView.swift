@@ -9,7 +9,9 @@ import SwiftUI
 
 struct HomeView: View {
     @State var date = Date.now
-    @State var itemDateList: [ItemData] = []
+    @State var itemDateList: [ItemData] = [
+        ItemData(date: .now, memoTitle: "쌈뽕한 하루", memoContent: "ㅎㅇ", level: Level.level3)
+    ]
 //    @Binding var selectedDate: Date
     
     var body: some View {
