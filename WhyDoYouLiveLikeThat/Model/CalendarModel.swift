@@ -6,22 +6,13 @@
 //
 import SwiftUI
 
-class DateStore: Identifiable {
+struct ItemData: Identifiable {
     let id: UUID = UUID()
     var date: Date
-    var level: Level
-    
-    var image: [Image]
     var memoTitle: String
     var memoContent: String
-    
-    init(date: Date, level: Level, image: [Image], memoTitle: String, memoContent: String) {
-        self.date = date
-        self.level = level
-        self.image = image
-        self.memoTitle = memoTitle
-        self.memoContent = memoContent
-    }
+//    var level: Level
+//    var image: [Image]
 }
 
 enum Level: Int {
@@ -32,3 +23,40 @@ enum Level: Int {
     case level5
 }
 
+struct cntData: Hashable {
+    var cnt: Int
+}
+
+enum BoxCellColor: Hashable {
+    case red(cntData)
+    case orange(cntData)
+    case yellow(cntData)
+    case green(cntData)
+    case blue(cntData)
+    
+    var hexColor: String {
+        switch self {
+        case .red: return "FF7683"
+        case .orange: return "FEC344"
+        case .yellow: return "FFEA2E"
+        case .green: return "79BF3C"
+        case .blue: return "5FBFE4"
+        }
+    }
+    
+    var count: Int {
+        switch self {
+        case .red(let data), .orange(let data), .yellow(let data), .green(let data), .blue(let data):
+            return data.cnt
+        }
+    }
+}
+
+
+let data: [BoxCellColor] = [
+    .red(cntData(cnt: 12)),
+    .orange(cntData(cnt: 21)),
+    .yellow(cntData(cnt: 33)),
+    .green(cntData(cnt: 58)),
+    .blue(cntData(cnt: 10))
+]

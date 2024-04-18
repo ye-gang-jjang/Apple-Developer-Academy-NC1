@@ -19,7 +19,6 @@
 		5C8016222BC7A18900BEEEB4 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8016212BC7A18900BEEEB4 /* SplashView.swift */; };
 		5C9BED1E2BC7A2EF00861FA2 /* Color+hexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9BED1D2BC7A2EF00861FA2 /* Color+hexColor.swift */; };
 		5C9BED202BC7A3A200861FA2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9BED1F2BC7A3A200861FA2 /* HomeView.swift */; };
-		5C9BED232BC7A3B900861FA2 /* MypageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9BED222BC7A3B900861FA2 /* MypageView.swift */; };
 		5CA43EB12BCEC8F800082698 /* ImageViewTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA43EB02BCEC8F800082698 /* ImageViewTester.swift */; };
 		5CB0CE4F2BCD5F040092B9C6 /* ItemAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB0CE4E2BCD5F040092B9C6 /* ItemAddView.swift */; };
 		5CB0CE532BCD644F0092B9C6 /* Date + DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB0CE522BCD644F0092B9C6 /* Date + DateFormatter.swift */; };
@@ -45,7 +44,6 @@
 		5C8016212BC7A18900BEEEB4 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		5C9BED1D2BC7A2EF00861FA2 /* Color+hexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+hexColor.swift"; sourceTree = "<group>"; };
 		5C9BED1F2BC7A3A200861FA2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		5C9BED222BC7A3B900861FA2 /* MypageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageView.swift; sourceTree = "<group>"; };
 		5CA43EB02BCEC8F800082698 /* ImageViewTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewTester.swift; sourceTree = "<group>"; };
 		5CB0CE4E2BCD5F040092B9C6 /* ItemAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemAddView.swift; sourceTree = "<group>"; };
 		5CB0CE522BCD644F0092B9C6 /* Date + DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + DateFormatter.swift"; sourceTree = "<group>"; };
@@ -97,7 +95,6 @@
 				5C71F0B62BCF5C620036A655 /* Fonts */,
 				5C71F0B52BCF5BA70036A655 /* Info.plist */,
 				5CB0CE512BCD63E50092B9C6 /* Model */,
-				5CB0CE502BCD63DD0092B9C6 /* ViewModel */,
 				5C9BED1C2BC7A2DA00861FA2 /* Utills */,
 				5C9BED212BC7A3AA00861FA2 /* View */,
 				5C8016112BC788DE00BEEEB4 /* WhyDoYouLiveLikeThatApp.swift */,
@@ -132,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				5CB0CE562BCD84D20092B9C6 /* Item */,
-				5CA9763A2BC834B300AE460E /* Mypage */,
 				5CA976392BC834AB00AE460E /* Calendar */,
 				5C8016132BC788DE00BEEEB4 /* ContentView.swift */,
 			);
@@ -151,21 +147,6 @@
 			path = Calendar;
 			sourceTree = "<group>";
 		};
-		5CA9763A2BC834B300AE460E /* Mypage */ = {
-			isa = PBXGroup;
-			children = (
-				5C9BED222BC7A3B900861FA2 /* MypageView.swift */,
-			);
-			path = Mypage;
-			sourceTree = "<group>";
-		};
-		5CB0CE502BCD63DD0092B9C6 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		5CB0CE512BCD63E50092B9C6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,9 +158,9 @@
 		5CB0CE562BCD84D20092B9C6 /* Item */ = {
 			isa = PBXGroup;
 			children = (
+				5CB0CE572BCD85410092B9C6 /* ItemCell.swift */,
 				5CB0CE4E2BCD5F040092B9C6 /* ItemAddView.swift */,
 				5CEB13FB2BCCFC9C00DA29F9 /* ItemShowSheetView.swift */,
-				5CB0CE572BCD85410092B9C6 /* ItemCell.swift */,
 			);
 			path = Item;
 			sourceTree = "<group>";
@@ -259,7 +240,6 @@
 			files = (
 				5CA43EB12BCEC8F800082698 /* ImageViewTester.swift in Sources */,
 				5C8016222BC7A18900BEEEB4 /* SplashView.swift in Sources */,
-				5C9BED232BC7A3B900861FA2 /* MypageView.swift in Sources */,
 				5CB0CE4F2BCD5F040092B9C6 /* ItemAddView.swift in Sources */,
 				5CEB13FC2BCCFC9C00DA29F9 /* ItemShowSheetView.swift in Sources */,
 				5C6C984F2BCF950D00951AE1 /* CalendarModel.swift in Sources */,

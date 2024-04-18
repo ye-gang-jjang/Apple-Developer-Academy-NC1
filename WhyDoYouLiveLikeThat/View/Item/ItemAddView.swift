@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ItemAddView: View {
+    @Binding var itemDateList: [ItemData]
     @State var title: String = ""
     @State var text: String = ""
     @State var isEditing = false
@@ -53,9 +54,23 @@ struct ItemAddView: View {
             .navigationTitle("오늘을 기록해보세요")
             .navigationBarTitleDisplayMode(.inline)
         }
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Button {
+                    let newItem = ItemData(date: Calendar.current.startOfDay(for: Date()), memoTitle: title, memoContent: text)
+//                    Calendar.getDate(for: <#T##Int#>)
+                    itemDateList.append(newItem)
+                    print(newItem)
+                    
+                } label: {
+                    Text("저장")
+                }
+                
+            }
+        }
     }
 }
 
 #Preview {
-    ItemAddView()
+    ItemAddView(itemDateList: .constant([]))
 }

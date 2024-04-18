@@ -10,7 +10,9 @@ import SwiftUI
 struct CalendarView: View {
     @Binding var month: Date
     @State var offset: CGSize = CGSize()
-    @State var clickedDates: Set<Date> = []
+    @State private var selectedDate: Date? = nil
+    @Binding var itemDateList: [ItemData]
+
     
     var body: some View {
         VStack {
@@ -86,19 +88,22 @@ struct CalendarView: View {
                     } else {
                         let date = getDate(for: index - firstWeekday)
                         let day = index - firstWeekday + 1
-                        let clicked = clickedDates.contains(date)
                         
-                        CellView(day: day, clicked: clicked)
+                        // TODO: - 필터기능
+                        let item = itemDateList.filter({ $0.date == Calendar.current.startOfDay(for: date)}).first
+                            
+                        CellView(date: date, day: day, item: item)
                             .onTapGesture {
-                                if clicked {
-                                    clickedDates.remove(date)
-                                } else {
-                                    clickedDates.insert(date)
-                                }
+                                selectedDate = date
                             }
+                            .sheet(item: $selectedDate) { date in
+                                ItemShowSheetView()
+                            }
+                            
                     }
                 }
             }
+
         }
         .frame(width: .infinity, height: 290)
     }
@@ -106,34 +111,33 @@ struct CalendarView: View {
 
 // MARK: - 일자 셀 뷰
 private struct CellView: View {
+    var date: Date
     var day: Int
-    var clicked: Bool = false
-    
-    init(day: Int, clicked: Bool) {
-        self.day = day
-        self.clicked = clicked
-    }
+    var item: ItemData?
     
     var body: some View {
         VStack {
             // day 날짜 + 사각형
-            RoundedRectangle(cornerRadius: 5)
-                .stroke(.gray)
-                .frame(width: 40, height: 40)
-                .overlay(Text(String(day)))
-                .foregroundColor(.black)
-            
-            
-            if clicked {
-//                Text("Click")
-//                    .font(.caption)
-//                    .foregroundColor(.red)
-                Image(systemName: "plus")
+//            if date.isToday {
+//                Text("오늘임")
+//            }
+            if let newItem = item {
+                RoundedRectangle(cornerRadius: 5)
+                    .stroke(.green)
+                    .frame(width: 40, height: 40)
+                    .overlay(Text(String(day)))
+                    .foregroundColor(.black)
+            } else {
+                RoundedRectangle(cornerRadius: 5)
+                    .stroke(.gray)
+                    .frame(width: 40, height: 40)
+                    .overlay(Text(String(day)))
+                    .foregroundColor(.black)
             }
         }
     }
 }
 
 #Preview {
-    CalendarView(month: .constant(Date.now))
+    CalendarView(month: .constant(Date.now), itemDateList: .constant([]))
 }

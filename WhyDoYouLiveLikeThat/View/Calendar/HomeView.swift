@@ -7,49 +7,9 @@
 
 import SwiftUI
 
-struct cntData: Hashable {
-    var cnt: Int
-}
-
-enum BoxCellColor: Hashable {
-    case red(cntData)
-    case orange(cntData)
-    case yellow(cntData)
-    case green(cntData)
-    case blue(cntData)
-    
-    var hexColor: String {
-        switch self {
-        case .red: return "FF7683"
-        case .orange: return "FEC344"
-        case .yellow: return "FFEA2E"
-        case .green: return "79BF3C"
-        case .blue: return "5FBFE4"
-        }
-    }
-    
-    var count: Int {
-        switch self {
-        case .red(let data), .orange(let data), .yellow(let data), .green(let data), .blue(let data):
-            return data.cnt
-        }
-    }
-}
-
-
-
-
-let data: [BoxCellColor] = [
-    .red(cntData(cnt: 12)),
-    .orange(cntData(cnt: 21)),
-    .yellow(cntData(cnt: 33)),
-    .green(cntData(cnt: 58)),
-    .blue(cntData(cnt: 10))
-]
-
-
 struct HomeView: View {
     @State var date = Date.now
+    @State var itemDateList: [ItemData] = []
     @Binding var selectedDate: Date
     
     var body: some View {
@@ -74,13 +34,13 @@ struct HomeView: View {
             }
             .padding(.bottom, 10)
             
-            CalendarView(month: $date)
+            CalendarView(month: $date, itemDateList: $itemDateList)
                 .padding(.horizontal, 10)
             
             RowLogoMoving()
             
             // WritingPageView로 이동하는 NavigationLink
-            NavigationLink(destination: ItemAddView()) {
+            NavigationLink(destination: ItemAddView(itemDateList: $itemDateList)) {
                 GifImage("warawara")
                     .frame(width: 150, height: 150)
             }
@@ -88,15 +48,6 @@ struct HomeView: View {
     }
 }
 
-extension HomeView {
-    static let dateFormatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "MM 월"
-        return formatter
-    }()
-    
-    static let weekdaySymbols = Calendar.current.veryShortWeekdaySymbols
-}
 
 #Preview {
     HomeView(selectedDate: .constant(Date()))

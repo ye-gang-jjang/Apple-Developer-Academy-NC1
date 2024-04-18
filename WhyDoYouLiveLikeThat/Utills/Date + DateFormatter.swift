@@ -9,6 +9,26 @@
 
 import SwiftUI
 
+extension View {
+    
+}
+
+extension String {
+    
+}
+
+extension Date {
+    var isToday: Bool {
+        Calendar.current.startOfDay(for: self) == Calendar.current.startOfDay(for: Date())
+    }
+}
+
+extension Calendar {
+//    static func getDate(for day: Int) -> Date {
+//        return Calendar.current.date(byAdding: .day, value: day, to: startOfMonth())!
+//    }
+}
+
 extension CalendarView {
     /// 특정 해당 날짜
     func getDate(for day: Int) -> Date {
@@ -88,6 +108,25 @@ extension CalendarView {
     static let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "YYYY.MM"
+        return formatter
+    }()
+    
+    static let weekdaySymbols = Calendar.current.veryShortWeekdaySymbols
+}
+
+extension Date: Identifiable {
+    public var id: Date {
+        self
+    }
+}
+
+// MARK: - HomeView 에서 사용하는 dateFormatter
+// TODO: - Date에 extension으로 수정
+
+extension HomeView {
+    static let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM 월"
         return formatter
     }()
     

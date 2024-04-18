@@ -33,6 +33,8 @@ struct ImageViewTester: View {
             } label: {
                 Text("Image Picker")
             }
+            .border(.red)
+            
             .sheet(isPresented: $showImagePicker, onDismiss: {
                 loadImage()
             }) {

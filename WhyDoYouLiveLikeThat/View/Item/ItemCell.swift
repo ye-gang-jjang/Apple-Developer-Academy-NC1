@@ -11,6 +11,15 @@ struct ItemCell: View {
     var isEmpty = 0
     var imgName = ""
     
+    @State var showImagePicker = false
+    @State var selectedUIImage: UIImage?
+    @State var image: Image?
+    
+    func loadImage() {
+        guard let selectedImage = selectedUIImage else { return }
+        image = Image(uiImage: selectedImage)
+    }
+    
     var body: some View {
         Button {
 //            ImagePicker()
